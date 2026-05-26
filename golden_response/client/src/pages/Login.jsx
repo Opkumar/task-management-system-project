@@ -1,15 +1,37 @@
+/**
+ * @file Login.jsx
+ * @description Login page component with form validation and Redux integration
+ * @handles User authentication and navigation
+ */
+
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate, Link } from 'react-router-dom'
 import { login } from '../redux/slices/authSlice'
 import { motion } from 'framer-motion'
 
+/**
+ * Login Component
+ * Renders login form with email and password fields
+ * Validates input and dispatches login action on successful submission
+ * @component
+ * @returns {JSX.Element} Login page UI
+ */
 export default function Login() {
+  // Local state for form data
   const [formData, setFormData] = useState({ email: '', password: '' })
+  // Local state for error messages
   const [error, setError] = useState('')
+  // Redux dispatch hook
   const dispatch = useDispatch()
+  // Navigation hook
   const navigate = useNavigate()
 
+  /**
+   * Handle form field changes
+   * Updates formData state with input values
+   * @param {Event} e - Input change event
+   */
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -17,11 +39,18 @@ export default function Login() {
     })
   }
 
+  /**
+   * Handle form submission
+   * Validates input, dispatches login action, navigates to dashboard
+   * @async
+   * @param {Event} e - Form submit event
+   */
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      // Mock login - replace with API call
+      // Validate form fields are not empty
       if (formData.email && formData.password) {
+        // Dispatch login action with user data (mock authentication)
         dispatch(login({
           user: {
             id: '1',
@@ -31,6 +60,7 @@ export default function Login() {
           },
           token: 'mock_token_123'
         }))
+        // Navigate to dashboard on successful login
         navigate('/')
       } else {
         setError('Please fill in all fields')
@@ -42,12 +72,14 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-[#020617] flex items-center justify-center px-4">
+      {/* Animated login card container */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
         className="bg-white/5 border border-white/10 rounded-3xl p-10 w-full max-w-md backdrop-blur-xl"
       >
+        {/* Page title with animation */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,6 +90,7 @@ export default function Login() {
         </motion.h1>
         <p className="text-gray-400 mb-8">Sign in to your TaskFlow account</p>
 
+        {/* Error message display */}
         {error && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -68,7 +101,9 @@ export default function Login() {
           </motion.div>
         )}
 
+        {/* Login form */}
         <form onSubmit={handleSubmit} className="space-y-5">
+          {/* Email input field */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">Email</label>
             <input
@@ -81,6 +116,7 @@ export default function Login() {
             />
           </div>
 
+          {/* Password input field */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">Password</label>
             <input
@@ -93,6 +129,7 @@ export default function Login() {
             />
           </div>
 
+          {/* Submit button with animation */}
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -103,6 +140,7 @@ export default function Login() {
           </motion.button>
         </form>
 
+        {/* Link to register page */}
         <p className="text-center text-gray-400 mt-6">
           Don't have an account?{' '}
           <Link to="/register" className="text-violet-400 hover:text-violet-300 font-semibold">

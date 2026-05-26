@@ -1,17 +1,38 @@
+/**
+ * @file Register.jsx
+ * @description User registration/signup page component
+ * @handles User account creation with form validation
+ */
+
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
+/**
+ * Register Component
+ * Renders registration form with name, email, and password fields
+ * Validates password confirmation and input fields
+ * @component
+ * @returns {JSX.Element} Registration page UI
+ */
 export default function Register() {
+  // Local state for form data
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
     confirmPassword: ''
   })
+  // Local state for error messages
   const [error, setError] = useState('')
+  // Navigation hook
   const navigate = useNavigate()
 
+  /**
+   * Handle form field changes
+   * Updates formData state with input values
+   * @param {Event} e - Input change event
+   */
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,13 +40,23 @@ export default function Register() {
     })
   }
 
+  /**
+   * Handle form submission
+   * Validates password match and required fields
+   * Navigates to login page on successful registration
+   * @async
+   * @param {Event} e - Form submit event
+   */
   const handleSubmit = async (e) => {
     e.preventDefault()
+    // Validate passwords match
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match')
       return
     }
+    // Validate all fields are filled
     if (formData.name && formData.email && formData.password) {
+      // Navigate to login page after successful registration
       navigate('/login')
     } else {
       setError('Please fill in all fields')
@@ -34,12 +65,14 @@ export default function Register() {
 
   return (
     <div className="min-h-screen bg-[#020617] flex items-center justify-center px-4">
+      {/* Animated registration card container */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
         className="bg-white/5 border border-white/10 rounded-3xl p-10 w-full max-w-md backdrop-blur-xl"
       >
+        {/* Page title with animation */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,6 +83,7 @@ export default function Register() {
         </motion.h1>
         <p className="text-gray-400 mb-8">Join TaskFlow Enterprise</p>
 
+        {/* Error message display */}
         {error && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -60,7 +94,9 @@ export default function Register() {
           </motion.div>
         )}
 
+        {/* Registration form */}
         <form onSubmit={handleSubmit} className="space-y-5">
+          {/* Full name input field */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">Full Name</label>
             <input
@@ -73,6 +109,7 @@ export default function Register() {
             />
           </div>
 
+          {/* Email input field */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">Email</label>
             <input
@@ -85,6 +122,7 @@ export default function Register() {
             />
           </div>
 
+          {/* Password input field */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">Password</label>
             <input
@@ -97,6 +135,7 @@ export default function Register() {
             />
           </div>
 
+          {/* Confirm password input field */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">Confirm Password</label>
             <input
@@ -109,6 +148,7 @@ export default function Register() {
             />
           </div>
 
+          {/* Submit button with animation */}
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -119,6 +159,7 @@ export default function Register() {
           </motion.button>
         </form>
 
+        {/* Link to login page */}
         <p className="text-center text-gray-400 mt-6">
           Already have an account?{' '}
           <Link to="/login" className="text-violet-400 hover:text-violet-300 font-semibold">
