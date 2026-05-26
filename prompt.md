@@ -406,18 +406,6 @@ Store:
 
 ---
 
-## Notification Data
-
-Store:
-
-* `notification_id`
-* `user_id`
-* `message`
-* `type`
-* `read_status`
-* `timestamp`
-
----
 
 # Backend Requirements
 
