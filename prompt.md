@@ -411,7 +411,7 @@ Develop a scalable backend architecture using:
 
 Build a modern responsive frontend using:
 
-* React.js or Next.js
+* React.js 
 * Mobile-first responsive design
 * Reusable UI components
 * Drag-and-drop Kanban boards
