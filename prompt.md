@@ -641,58 +641,40 @@ Structure the project to support future features such as:
 The Task Management System should use modern technologies to ensure scalability, security, real-time communication, and high performance.
 
 
-# Frontend
+## Frontend
 
-## React.js
-
-Used to build a fast, responsive, and component-based user interface for web and mobile-ready applications.
+ React.js : Used to build a fast, responsive, and component-based user interface for web and mobile-ready applications.
 
 
-# Backend
+## Backend
 
-## Node.js
+Node.js : Used for building a scalable and high-performance server-side application with asynchronous processing.
 
-Used for building a scalable and high-performance server-side application with asynchronous processing.
-
-## Express.js
-
-Used to create RESTful APIs, middleware handling, routing, and backend architecture efficiently.
+Express.js : Used to create RESTful APIs, middleware handling, routing, and backend architecture efficiently.
 
 
-# Database
+## Database
 
-## MongoDB
-
-Used for storing scalable and flexible NoSQL data with fast querying and schema-based modeling.
+MongoDB : Used for storing scalable and flexible NoSQL data with fast querying and schema-based modeling.
 
 
-# Real-Time Communication
+## Real-Time Communication
 
-## Socket.IO
-
-Used for implementing live notifications, real-time task updates, and instant collaboration features.
+Socket.IO : Used for implementing live notifications, real-time task updates, and instant collaboration features.
 
 
-# Authentication
+## Authentication
 
-## JWT
-
-Used for secure user authentication, protected routes, and session management.
+JWT : Used for secure user authentication, protected routes, and session management.
 
 
-# File Storage
+## File Storage
 
-## Cloudinary
-
-Used for secure cloud-based image, document, and media file storage with optimized delivery.
+Cloudinary : Used for secure cloud-based image, document, and media file storage with optimized delivery.
 
 
-# DevOps
+## DevOps
 
-## Docker
+Docker : Used for containerized application deployment and consistent development environments.
 
-Used for containerized application deployment and consistent development environments.
-
-## GitHub Actions
-
-Used for CI/CD automation, testing workflows, and automated deployment pipelines.
+GitHub Actions : Used for CI/CD automation, testing workflows, and automated deployment pipelines.
