@@ -1,52 +1,39 @@
 # Full-Stack Task Management System
 
-## Overview
-
-You are developing a full-stack Task Management System for organisations to streamline project collaboration, task tracking, team productivity, and workflow management across multiple departments and teams.
-
-
 # Context and Role
 
-As a senior full-stack developer and software architect, you are responsible for designing and implementing a scalable, secure, and production-ready Task Management System.
-
-The platform must support:
-
-* Administrators
-* Managers
-* Team Leaders
-* Employees
-
-The system should provide:
-
-* Real-time task updates
-* Collaboration tools
-* Reporting systems
-* Workflow automation
-* Secure communication
-* Scalable architecture
+As a senior full-stack developer and software architect, you are responsible for designing and implementing a scalable, secure, and production-ready Task Management System for organizations. The platform should support administrators, managers, team leaders, and employees while providing real-time task updates, collaboration tools, workflow automation, reporting systems, secure communication, and scalable architecture for enterprise-level usage.
 
 
 # Objective
 
-Develop a complete web and mobile-ready Task Management System that enables:
+Develop a complete web and mobile-ready Task Management System that allows users to create, manage, assign, and monitor tasks efficiently across multiple teams and departments. The platform should support seamless collaboration, real-time communication, project and sprint management, workflow automation, and advanced productivity tracking for organizations of all sizes.
 
-* Task creation and assignment
-* Team collaboration and communication
-* Project and sprint management
-* Real-time task tracking
-* Role-based dashboards
-* File sharing and comments
-* Notifications and reminders
-* Productivity analytics and reporting
+The system should provide a modern and scalable environment where administrators, managers, team leaders, and employees can collaborate effectively through role-based dashboards, live task updates, file sharing, comments, notifications, and reporting tools.
 
-The system should improve:
+The platform should improve overall workflow efficiency, transparency, accountability, communication, and team productivity while reducing manual work and improving project tracking accuracy.
 
-* Workflow efficiency
-* Transparency
-* Accountability
-* Team productivity
+The Task Management System should include:
 
-The platform must support organisations of all sizes.
+* Task creation, assignment, updating, and tracking
+* Real-time task synchronization and notifications
+* Team collaboration and communication tools
+* Project and sprint management features
+* Role-based authentication and dashboards
+* File uploads, sharing, and attachment previews
+* Activity logs and task history tracking
+* Calendar, Kanban, and list-based task views
+* Productivity analytics and performance reporting
+* Deadline and milestone management
+* Team workload monitoring and reporting
+* Recurring tasks and automated workflows
+* Mobile-responsive and cross-platform UI support
+* Secure authentication and access control
+* Real-time comments, mentions, and discussions
+* Exportable reports and dashboard analytics
+* Scalable architecture for enterprise-level usage
+
+The application should be designed using modern frontend and backend technologies with a secure, maintainable, and production-ready architecture that supports future scalability and feature expansion.
 
 
 # Functional Requirements
