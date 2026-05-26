@@ -468,7 +468,6 @@ Implement secure and validated data processing across both frontend and backend 
 
 Ensure all incoming data is properly sanitized, validated, and securely processed before storing or returning responses.
 
----
 
 # Input Sanitization
 
@@ -488,7 +487,6 @@ Use:
 * Helmet.js security middleware
 * DOMPurify (frontend sanitization if needed)
 
----
 
 # Validation Rules
 
@@ -522,7 +520,6 @@ Validate uploaded files for:
 * Malware prevention
 * Restricted executable uploads
 
----
 
 # API Response Structure
 
@@ -538,6 +535,21 @@ Ensure all backend APIs return consistent and structured JSON responses.
     "taskId": "12345"
   }
 }
+
+```
+
+## Error Response Format
+
+```json
+{
+  "success": false,
+  "message": "Validation failed",
+  "error": {
+    "field": "email",
+    "reason": "Invalid email format"
+  }
+}
+```
 
 
 # Output Requirements
@@ -633,7 +645,6 @@ Use:
 ## Authentication
 
 * JWT
-* OAuth
 
 ## File Storage
 
