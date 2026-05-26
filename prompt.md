@@ -462,6 +462,84 @@ Use:
 * D3.js
 
 
+# Data Processing Requirements
+
+Implement secure and validated data processing across both frontend and backend systems.
+
+Ensure all incoming data is properly sanitized, validated, and securely processed before storing or returning responses.
+
+---
+
+# Input Sanitization
+
+Sanitize all user inputs to prevent:
+
+* XSS (Cross-Site Scripting) attacks
+* NoSQL Injection attacks
+* SQL Injection attacks
+* Malicious HTML or script injection
+* Unauthorized file upload execution
+
+Use:
+
+* Express Validator
+* Joi or Zod validation
+* MongoDB sanitization middleware
+* Helmet.js security middleware
+* DOMPurify (frontend sanitization if needed)
+
+---
+
+# Validation Rules
+
+Validate all incoming request data properly.
+
+## Email Validation
+
+Ensure:
+
+* Proper email format validation
+* Unique email verification
+* Lowercase normalization
+* Disposable email prevention (optional)
+
+## Password Validation
+
+Ensure passwords include:
+
+* Minimum character length
+* Uppercase letter
+* Lowercase letter
+* Numeric value
+* Special character
+
+## File Validation
+
+Validate uploaded files for:
+
+* File size limits
+* Allowed MIME types
+* Malware prevention
+* Restricted executable uploads
+
+---
+
+# API Response Structure
+
+Ensure all backend APIs return consistent and structured JSON responses.
+
+## Success Response Format
+
+```json
+{
+  "success": true,
+  "message": "Task created successfully",
+  "data": {
+    "taskId": "12345"
+  }
+}
+
+
 # Output Requirements
 
 The system should provide:
@@ -565,7 +643,3 @@ Use:
 
 * Docker
 * GitHub Actions
-
-
-
-
