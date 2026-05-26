@@ -4,7 +4,6 @@
 
 You are developing a full-stack Task Management System for organisations to streamline project collaboration, task tracking, team productivity, and workflow management across multiple departments and teams.
 
----
 
 # Context and Role
 
@@ -26,7 +25,6 @@ The system should provide:
 * Secure communication
 * Scalable architecture
 
----
 
 # Objective
 
@@ -50,7 +48,6 @@ The system should improve:
 
 The platform must support organisations of all sizes.
 
----
 
 # Functional Requirements
 
@@ -65,7 +62,6 @@ Implement secure authentication and authorization with:
 * Role-based access control
 * Profile management
 
----
 
 ## Task Management Features
 
@@ -94,8 +90,6 @@ Users should be able to:
   * Tags
   * Categories
 
----
-
 ## Project Management Features
 
 Managers should be able to:
@@ -112,7 +106,6 @@ Managers should be able to:
 * Track team workload
 * Monitor performance
 
----
 
 ## Team Collaboration Features
 
@@ -127,7 +120,6 @@ Implement:
 * Team calendars
 * Scheduling system
 
----
 
 # Real-Time System Requirements
 
@@ -139,7 +131,6 @@ Implement:
 * Real-time task synchronization
 * Online/offline user indicators
 
----
 
 # Data Requirements
 
@@ -208,7 +199,6 @@ Store:
   * Description:
     Controls whether the user account is accessible.
 
----
 
 ## Task Data
 
@@ -292,7 +282,6 @@ Store:
   * Description:
     Stores task creation and update timestamps automatically.
 
----
 
 ## Project Data
 
@@ -352,7 +341,6 @@ Store:
   * Description:
     Represents overall project progress state.
 
----
 
 ## Notification Data
 
@@ -404,7 +392,6 @@ Store:
   * Description:
     Stores notification creation time automatically.
 
----
 
 
 # Backend Requirements
@@ -419,7 +406,6 @@ Develop a scalable backend architecture using:
 * Secure API authentication
 * Rate limiting and logging
 
----
 
 # Frontend Requirements
 
@@ -433,7 +419,6 @@ Build a modern responsive frontend using:
 * Real-time UI updates
 * Dark/light mode support
 
----
 
 # Database Requirements
 
@@ -445,7 +430,6 @@ Use MongoDB or PostgreSQL with:
 * Scalable schema design
 * Fast querying and filtering
 
----
 
 # File Management
 
@@ -459,8 +443,6 @@ Implement:
 Use:
 
 * Cloudinary
-
----
 
 # Visualization and Reporting
 
@@ -479,7 +461,6 @@ Use:
 * Recharts
 * D3.js
 
----
 
 # Output Requirements
 
@@ -492,7 +473,6 @@ The system should provide:
 * Exportable reports in PDF
 * Calendar and Kanban views
 
----
 
 # Error Handling and Documentation
 
@@ -512,7 +492,6 @@ Provide:
 * Deployment instructions
 * Example API requests and responses
 
----
 
 # Performance and Scalability
 
@@ -525,7 +504,6 @@ The platform must:
 * Support horizontal scaling
 * Be cloud deployment ready
 
----
 
 # Security Constraints
 
@@ -538,7 +516,6 @@ Ensure:
 * Secure file upload handling
 * Environment variable management
 
----
 
 # Future Expansion
 
@@ -553,7 +530,6 @@ Structure the project to support future features such as:
 * Multi-organization support
 * Native mobile applications
 
----
 
 # Tools and Technologies
 
@@ -562,7 +538,6 @@ Use:
 ## Frontend
 
 * React.js
-* Next.js
 
 ## Backend
 
@@ -585,26 +560,12 @@ Use:
 ## File Storage
 
 * Cloudinary
-* AWS S3
 
 ## DevOps
 
 * Docker
 * GitHub Actions
 
----
-
-# Development Standards
-
-Follow:
-
-* Clean architecture principles
-* Modular reusable code structure
-* Industry-standard folder organization
-* REST API best practices
-* Scalable component design
-* Consistent naming conventions
-* Production-ready coding standards
 
 
 
