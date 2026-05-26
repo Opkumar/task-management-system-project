@@ -41,7 +41,7 @@ The application should be designed using modern frontend and backend technologie
 The Task Management System should provide secure authentication, advanced task management, team collaboration, project tracking, and real-time communication features for organizations of all sizes.
 
 
-# Authentication and User Management
+## Authentication and User Management
 
 Implement a secure authentication and authorization system for administrators, managers, team leaders, and employees.
 
@@ -57,7 +57,7 @@ The authentication module should support:
 The system should ensure secure access management and permission-based dashboard visibility for different user roles.
 
 
-# Task Management Features
+## Task Management Features
 
 The platform should provide a complete task management workflow that allows users to efficiently create, manage, organize, and monitor tasks in real time.
 
@@ -82,7 +82,7 @@ The task workflow should support multiple task states including:
 * Blocked
 
 
-# Project Management Features
+## Project Management Features
 
 The system should support advanced project management capabilities for managers and team leaders.
 
@@ -100,7 +100,7 @@ Managers should be able to:
 The project management system should help organizations improve workflow planning, collaboration, and task tracking efficiency.
 
 
-# Team Collaboration Features
+## Team Collaboration Features
 
 Implement real-time collaboration tools that improve communication and teamwork across departments and teams.
 
@@ -117,7 +117,7 @@ The collaboration module should include:
 The collaboration features should ensure seamless communication and faster task coordination between users.
 
 
-# Real-Time System Requirements
+## Real-Time System Requirements
 
 The platform should support real-time synchronization and instant communication across the entire application.
 
