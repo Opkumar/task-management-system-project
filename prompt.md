@@ -2,16 +2,16 @@
 
 # Context and Role
 
-As a senior full-stack developer and software architect, you are responsible for designing and implementing a scalable, secure, and production-ready Task Management System for organizations. The platform should support administrators, managers, team leaders, and employees while providing real-time task updates, collaboration tools, workflow automation, reporting systems, secure communication, and scalable architecture for enterprise-level usage.
+A seasoned full-stack engineer and system designer takes charge of building a strong, safe, task-handling platform fit for business demands. This setup must serve admins, supervisors, group leads, along with staff - each able to interact smoothly. Live task tracking appears alongside teamwork features, process streamlining, data summaries, protected messaging - all held within an expandable backbone meant for large-scale operation.
 
 
 # Objective
 
-Develop a complete web and mobile-ready Task Management System that allows users to create, manage, assign, and monitor tasks efficiently across multiple teams and departments. The platform should support seamless collaboration, real-time communication, project and sprint management, workflow automation, and advanced productivity tracking for organizations of all sizes.
+Building a full task management system for websites and mobile devices comes first. This tool helps people make, handle, assign, because track work items smoothly through various groups. Teams share updates without delays while talking live during projects. Sprint planning fits naturally alongside regular project oversight. Automating steps in daily processes cuts manual effort significantly. Performance insights appear clearly so progress is visible at once. Organizations big or small adapt it easily due to flexible structure. Functionality stays strong even when used widely across units.
 
-The system should provide a modern and scalable environment where administrators, managers, team leaders, and employees can collaborate effectively through role-based dashboards, live task updates, file sharing, comments, notifications, and reporting tools.
+Working within the platform lets teams stay aligned, thanks to personalized views shaped by user roles. Updates appear instantly, helping everyone track progress without delays. Sharing documents happens smoothly alongside ongoing discussions. Feedback flows naturally through built-in comment threads. Alerts guide attention to what matters most at any moment. Reports generate insights tailored to different levels of responsibility. Scalability supports growth, while the updated design keeps navigation intuitive.
 
-The platform should improve overall workflow efficiency, transparency, accountability, communication, and team productivity while reducing manual work and improving project tracking accuracy.
+By cutting down on repetitive tasks, the system boosts how smoothly teams operate. Clearer progress updates emerge when information flows without delays. Responsibility becomes easier to follow through built-in check points. As messages travel faster between members, confusion drops off. Accuracy in monitoring deadlines rises alongside fewer errors. Productivity grows not by pushing harder, but by working with better tools. Efficiency gains come from removing bottlenecks, not adding effort.
 
 The Task Management System should include:
 
